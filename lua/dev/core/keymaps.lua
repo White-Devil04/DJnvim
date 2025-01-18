@@ -28,3 +28,10 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+-- copilot keymaps
+keymap.set("n", "<leader>c", "<Cmd>CopilotChat<CR>", { silent = true }) -- open copilot chat
+keymap.set("n", "<leader>cc", "<Cmd>CopilotChatCode<CR>", { silent = true }) -- open copilot chat code
+keymap.set("n", "<leader>cq", "<Cmd>CopilotChatClose<CR>", { silent = true }) -- close copilot chat
+keymap.set("n", "<leader>cm", "<Cmd>CopilotChatModels<CR>", { silent = true }) -- open copilot chat models
+keymap.set("n", "<leader>cs", "<Cmd>CopilotSearch<CR>", { silent = true }) -- open copilot search
