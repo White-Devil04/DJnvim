@@ -13,6 +13,8 @@ return {
 			python = { "pylint" },
 		}
 
+		vim.g.python3_host_prog = "/path/to/your/.venv/bin/python"
+
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
 
 		vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
